@@ -1,0 +1,18 @@
+# Arquivos e pastas gerados pelo Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos de configuração do Eclipse
+.metadata/
+
+# Pastas específicas do Java
+bin/
+target/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos de build do Maven
+target/
