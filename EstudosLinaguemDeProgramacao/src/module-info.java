@@ -4,5 +4,5 @@
 /**
  * 
  */
-module principal {
+module EstudosLinaguemDeProgramacao {
 }
