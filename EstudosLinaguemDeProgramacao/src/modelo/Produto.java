@@ -15,10 +15,65 @@ public class Produto {
 		this.preco = preco;
 		this.estoque = estoque;
 	}
-	
-	public Produto() {
-		
+
+
+	public int getCodigo() {
+		return codigo;
 	}
+
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getUnidMedida() {
+		return unidMedida;
+	}
+
+
+	public void setUnidMedida(String unidMedida) {
+		this.unidMedida = unidMedida;
+	}
+
+
+	public double getPreco() {
+		return preco;
+	}
+
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+
+	public double getEstoque() {
+		return estoque;
+	}
+
+
+	public void setEstoque(double estoque) {
+		this.estoque = estoque;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Produto [codigo=" + codigo + ", nome=" + nome + ", unidMedida=" + unidMedida + ", preco=" + preco
+				+ ", estoque=" + estoque + "]";
+	}
+	
+	
 	
 	
 }
