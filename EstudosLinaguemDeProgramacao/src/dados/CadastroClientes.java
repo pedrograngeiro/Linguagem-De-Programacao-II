@@ -6,15 +6,24 @@ public class CadastroClientes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int numClientes = 5;
+        int[] numClientes = new int[5];
         
-        for(int i=0; i<numClientes; i++ ) {
+        for(int i=0; i<numClientes.length; i++ ) {
             Cliente cliente1 = new Cliente(0, null, 0, 0);
 
-            cliente1.setCodigo(1);
-            cliente1.setNome("João da Silva");
-            cliente1.setCpf(123456789);
-            cliente1.setTelefone(987654321);
+            
+            
+            System.out.println("Insira o codigo: ");
+            cliente1.setCodigo(sc.nextInt());
+            
+            System.out.println("Insira o nome: ");
+            cliente1.setNome(sc.next());
+            
+            System.out.println("Insira o CPF: ");
+            cliente1.setCpf(sc.nextInt());
+            
+            System.out.println("Insira o número de telefone: ");
+            cliente1.setTelefone(sc.nextInt());
 
             int codigo = cliente1.getCodigo();
             String nome = cliente1.getNome();
