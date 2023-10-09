@@ -1,12 +1,12 @@
 package dados;
 
 public class Cliente {
-	public int codigo;
-	public String nome;
-	public int cpf;
-	public int telefone;
+	private int codigo;
+	private String nome;
+	private String cpf;
+	private String telefone;
 	
-	public Cliente(int codigo, String nome, int cpf, int telefone) {
+	public Cliente(int codigo, String nome, String cpf, String telefone) {
 		this.codigo = codigo;
 		this.nome = nome;
 		this.cpf = cpf;
@@ -22,28 +22,26 @@ public class Cliente {
 		return nome;
 	}
 	
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 	
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 	
-	public int setCodigo(int codigo) {
-		return this.codigo = codigo;
+	public String setTelefone(String telefone) {
+		return telefone;
 	}
 	
-	public String setNome(String nome) {
-		return this.nome = nome;
-	}
+	public void imprimirDados() {
+        System.out.println("Código: " + codigo);
+        System.out.println("Nome: " + nome);
+        System.out.println("CPF: " + cpf);
+        System.out.println("Telefone: " + telefone);
+    }
 	
-	public int setCpf(int cpf) {
-		return this.cpf = cpf;
+	public boolean verificarNome(String nome) {
+		return this.nome.equalsIgnoreCase(nome);
 	}
-	
-	public int setTelefone(int telefone) {
-		return this.telefone = telefone;
-	}
-	
 }
